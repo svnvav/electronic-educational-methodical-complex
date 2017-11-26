@@ -10,6 +10,10 @@
   cursor: pointer;
 }
 
+.menu-button-clicked {
+  background-color: #000044;
+}
+
 .menu-button:hover{
   background-color: #000044;
 }

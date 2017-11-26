@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './content.css';
 
-class Content extends Component {
-  render() {
-    return (
-      <div className="content">
+export default function Content ({content}) {
+  return (
+    <div className="content">
 
-      </div>
-    );
-  }
+    </div>
+  );
 }
-
-export default Content;

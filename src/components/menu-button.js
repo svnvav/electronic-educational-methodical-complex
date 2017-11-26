@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './menu-button.css';
 
-class MenuButton extends Component {
-  render() {
+export default function MenuButton ({isActive, handleClick}) {
     return (
-      <div className="menu-button">
+      <div
+        className={"menu-button " + (isActive && "menu-button-clicked")}
+        onClick={()=>handleClick()}
+      >
         &#9776;
       </div>
     );
-  }
 }
-
-export default MenuButton;

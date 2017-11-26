@@ -1,18 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './header.css';
 
 import MenuButton from './menu-button.js'
 import AboutButton from './about-button.js'
 
-class Header extends Component {
-  render() {
-    return (
-      <div className="header">
-        <MenuButton/>
-        <AboutButton/>
-      </div>
-    );
-  }
+export default function Header({showMenu, showAbout, handleMenuClick, handleAboutClick}) {
+  return (
+    <div className="header">
+      <MenuButton isActive={showMenu} handleClick={handleMenuClick}/>
+      <AboutButton isActive={showAbout} handleClick={handleAboutClick}/>
+    </div>
+  );
 }
-
-export default Header;

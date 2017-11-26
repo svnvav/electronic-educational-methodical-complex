@@ -8,23 +8,38 @@ import About from './components/about.js';
 
 class App extends Component {
 
-  generateMenuItems(data){
-    let items = [
-      "Учебная программа",
+  constructor(props) {
+    super(props);
 
-    ];
-    for(let chapter in data.chapters){
+    this.state = {
+      showMenu: false,
+      showAbout: true,
+    };
+  }
 
-    }
-    return [];
+  handleMenuClick() {
+    return () => this.setState({
+      showMenu: !this.state.showMenu,
+    });
+  }
+
+  handleAboutClick(){
+    return () => this.setState({
+      showAbout: !this.state.showAbout,
+    });
   }
 
   render() {
     return (
       <div className="App">
-        <Header/>
-        <Menu items = {this.generateMenuItems(data)}/>
-        <About contentText = {data.about}/>
+        <Header
+          showMenu={this.state.showMenu}
+          handleMenuClick={this.handleMenuClick()}
+          showAbout={this.state.showAbout}
+          handleAboutClick={this.handleAboutClick()}
+        />
+        <Menu showMenu={this.state.showMenu} chapters = {data.chapters}/>
+        <About showAbout={this.state.showAbout} contentText = {data.about}/>
         <Content/>
       </div>
     );

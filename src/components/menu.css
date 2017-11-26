@@ -5,4 +5,18 @@
   background-color: #252560;
   width: 300px;
   height: calc(100vh - 40px);
+  transition: transform 500ms ease-in-out;
+}
+
+.menu-shown{
+  transform: translate3d(0,0,0);
+}
+
+.menu-hidden{
+  transform: translate3d(-300px,0,0);
+}
+
+.menu-list-wrapper {
+  list-style-type: none;
+  padding: 0;
 }

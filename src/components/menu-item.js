@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './menu-item.css';
 
-class MenuItem extends Component {
-  render() {
-    return (
-      <div className="menu-item">
-
-      </div>
-    );
-  }
+export default function MenuItem ({chapterId, type, text, handleClick}) {
+  return (
+    <li
+      className={"menu-item menu-item-" + type}
+    >
+      {text}
+    </li>
+  );
 }
-
-export default MenuItem;
