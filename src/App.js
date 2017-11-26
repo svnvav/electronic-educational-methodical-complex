@@ -12,8 +12,10 @@ class App extends Component {
     super(props);
 
     this.state = {
-      showMenu: false,
-      showAbout: true,
+      showMenu: true,
+      showAbout: false,
+      chapterId: "curriculum",
+      contentType: "default"
     };
   }
 
@@ -29,6 +31,13 @@ class App extends Component {
     });
   }
 
+  handleChangeContent(){
+    return (type, chapterId) => this.setState({
+      contentType: type,
+      chapterId: chapterId
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -38,9 +47,14 @@ class App extends Component {
           showAbout={this.state.showAbout}
           handleAboutClick={this.handleAboutClick()}
         />
-        <Menu showMenu={this.state.showMenu} chapters = {data.chapters}/>
+        <Menu
+          showMenu={this.state.showMenu}
+          chapters = {data.chapters}
+          handleItemClick={this.handleMenuClick()}
+          handleItemMouseEnter = {this.handleChangeContent()}
+        />
         <About showAbout={this.state.showAbout} contentText = {data.about}/>
-        <Content/>
+        <Content type={this.state.contentType} chapterId = {this.state.chapterId} data={data}/>
       </div>
     );
   }
@@ -144,8 +158,8 @@ const data = {
       "Praesent scelerisque risus in dolor aliquet porta. Aliquam erat volutpat. Mauris eu vestibulum sem. Pellentesque finibus facilisis libero, eget tincidunt velit imperdiet eget. Proin ac orci eget erat ornare volutpat. Integer non tristique dui. Aliquam posuere accumsan vestibulum. Aliquam non felis sit amet ligula sodales rhoncus. Donec sagittis sapien ultrices magna aliquet porta. Quisque imperdiet, ante et finibus egestas, augue nisi fringilla magna, vel vulputate ipsum eros sit amet lectus. Pellentesque vehicula elit id risus malesuada euismod.\n" +
       "\n" +
       "Integer fermentum hendrerit pretium. Etiam scelerisque nulla vestibulum ante facilisis pretium. Donec id interdum urna, sit amet bibendum est. In lobortis fermentum tellus et mattis. Suspendisse consectetur commodo libero a facilisis. Mauris efficitur ultrices interdum. Maecenas sed diam a orci placerat scelerisque ut id massa. Nullam fringilla velit lacus, ac placerat ex ornare nec. Morbi imperdiet mattis nulla sit amet ultricies. Vestibulum tincidunt gravida purus scelerisque pharetra. Maecenas congue quis erat a condimentum. Praesent eget tortor quis dolor elementum viverra. Nullam posuere eleifend venenatis.",
-      questions: ["", "", "", "", ""],
-      tasks: ["", "", ""],
+      questions: "",
+      tasks: "",
     },
 
     {
@@ -159,8 +173,8 @@ const data = {
       "Praesent scelerisque risus in dolor aliquet porta. Aliquam erat volutpat. Mauris eu vestibulum sem. Pellentesque finibus facilisis libero, eget tincidunt velit imperdiet eget. Proin ac orci eget erat ornare volutpat. Integer non tristique dui. Aliquam posuere accumsan vestibulum. Aliquam non felis sit amet ligula sodales rhoncus. Donec sagittis sapien ultrices magna aliquet porta. Quisque imperdiet, ante et finibus egestas, augue nisi fringilla magna, vel vulputate ipsum eros sit amet lectus. Pellentesque vehicula elit id risus malesuada euismod.\n" +
       "\n" +
       "Integer fermentum hendrerit pretium. Etiam scelerisque nulla vestibulum ante facilisis pretium. Donec id interdum urna, sit amet bibendum est. In lobortis fermentum tellus et mattis. Suspendisse consectetur commodo libero a facilisis. Mauris efficitur ultrices interdum. Maecenas sed diam a orci placerat scelerisque ut id massa. Nullam fringilla velit lacus, ac placerat ex ornare nec. Morbi imperdiet mattis nulla sit amet ultricies. Vestibulum tincidunt gravida purus scelerisque pharetra. Maecenas congue quis erat a condimentum. Praesent eget tortor quis dolor elementum viverra. Nullam posuere eleifend venenatis.",
-      questions: ["", "", "", "", ""],
-      tasks: ["", "", ""],
+      questions: "",
+      tasks: "",
     },
   ],
 
