@@ -7,7 +7,7 @@ export default function About ({showAbout, contentText}) {
       <div
         className="about-transparent-background"
         style={{
-          opacity: showAbout ? 0.5 : 0,
+          opacity: showAbout ? 0.7 : 0,
           transform: `translate3d(0, ${showAbout ? 0 : -100}vh, 0)`
         }}
       />

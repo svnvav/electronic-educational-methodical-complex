@@ -1,3 +1,14 @@
 .test-question-item{
+  padding: 5px;
+  cursor: pointer;
+}
 
+.test-question-item:hover{
+  background-color: rgba(22,22,55,0.15);
+}
+
+.test-question-item-answered {
+  padding: 5px;
+  cursor: pointer;
+  background-color: rgba(22,22,55,0.3);
 }
