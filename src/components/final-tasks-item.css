@@ -1,3 +1,37 @@
 .final-tasks-item {
+  border: 1px solid rgba(22,22,55,0.2);
+  border-radius: 2px;
+  margin-top: 20px;
+  padding: 5px;
+}
 
+.final-tasks-item-text {
+  margin-bottom: 15px;
+}
+
+.final-tasks-item-input {
+  display: inline-block;
+  border-radius: 3px 0px 0px 3px;
+  border: 1px solid rgba(22,22,55,0.5);
+  padding: 5px;
+  height: 17px;
+}
+
+.final-tasks-item-button{
+  display: inline-block;
+  padding: 5px;
+  background-color: #222255;
+  color: #ccc;
+  border-radius: 0px 3px 3px 0px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.final-tasks-item-button:hover{
+  background-color: #000044;
+}
+
+.final-tasks-item-result {
+  display: inline-block;
+  margin-left: 20px;
 }

@@ -21,7 +21,7 @@ export default function Content ({type, chapterId, data}) {
 
   return (
     <div className="content">
-      {content}
+      {(typeof content === 'object') ? content : <div dangerouslySetInnerHTML={{__html: content}}/>}
     </div>
   );
 }

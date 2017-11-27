@@ -24,7 +24,7 @@ class Test extends Component {
 
     let mark = this.props.data.evaluations[0].result;
     for(let i = 1; i < this.props.data.evaluations.length; ++i)
-      if(rightAnswersCount >= this.props.data.evaluations[i]) mark = this.props.data.evaluations[i].result;
+      if(rightAnswersCount >= this.props.data.evaluations[i].count) mark = this.props.data.evaluations[i].result;
 
     let result = "Правильных ответов: " + rightAnswersCount + " из " + this.props.data.items.length +
       ";  Оценка: " + mark;

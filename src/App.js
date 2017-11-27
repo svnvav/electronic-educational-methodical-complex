@@ -273,17 +273,23 @@ const data = {
 
     tasks: [
       {
-        text: "a",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend erat nec consequat efficitur. Donec ullamcorper faucibus tellus non auctor. Cras sollicitudin justo urna, id posuere felis mattis ut. Morbi quis rhoncus libero. Maecenas elementum mattis magna vitae porta. Proin bibendum, felis sed volutpat interdum, augue metus dignissim elit, ut sollicitudin odio urna nec eros. Suspendisse potenti. Sed et posuere odio. Aenean fermentum dolor euismod, fermentum mauris a, dignissim arcu. Praesent vel metus accumsan, auctor risus rutrum, auctor tortor. Aliquam et pharetra odio, id aliquet magna. Nulla vitae finibus ligula, id facilisis enim. Quisque volutpat euismod erat non ultrices. Nam lacinia diam quis sem tempor blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu tristique lectus.\\n\" +\n" +
+        "      \"\\n\" +\n" +
+        "      \"Aliquam rhoncus",
         rightAnswer: "a",
         userAnswer: ""
       },
       {
-        text: "b",
+        text: "Lorem ipsum dolor sit amet, ccfgnfjfdjfdyjonsectetur adipiscing elit. Mauris eleifend erat nec consequat efficitur. Donec ullamcorper faucibus tellus non auctor. Cras sollicitudin justo urna, id posuere felis mattis ut. Morbi quis rhoncus libero. Maecenas elementum mattis magna vitae porta. Proin bibendum, felis sed volutpat interdum, augue metus dignissim elit, ut sollicitudin odio urna nec eros. Suspendisse potenti. Sed et posuere odio. Aenean fermentum dolor euismod, fermentum mauris a, dignissim arcu. Praesent vel metus accumsan, auctor risus rutrum, auctor tortor. Aliquam et pharetra odio, id aliquet magna. Nulla vitae finibus ligula, id facilisis enim. Quisque volutpat euismod erat non ultrices. Nam lacinia diam quis sem tempor blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu tristique lectus.\\n\" +\n" +
+        "      \"\\n\" +\n" +
+        "      \"Aliquam rhoncus",
         rightAnswer: "b",
         userAnswer: ""
       },
       {
-        text: "c",
+        text: "Lorfdhsrtjdryjtjyem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend erat nec consequat efficitur. Donec ullamcorper faucibus tellus non auctor. Cras sollicitudin justo urna, id posuere felis mattis ut. Morbi quis rhoncus libero. Maecenas elementum mattis magna vitae porta. Proin bibendum, felis sed volutpat interdum, augue metus dignissim elit, ut sollicitudin odio urna nec eros. Suspendisse potenti. Sed et posuere odio. Aenean fermentum dolor euismod, fermentum mauris a, dignissim arcu. Praesent vel metus accumsan, auctor risus rutrum, auctor tortor. Aliquam et pharetra odio, id aliquet magna. Nulla vitae finibus ligula, id facilisis enim. Quisque volutpat euismod erat non ultrices. Nam lacinia diam quis sem tempor blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu tristique lectus.\\n\" +\n" +
+        "      \"\\n\" +\n" +
+        "      \"Aliquam rhoncus",
         rightAnswer: "c",
         userAnswer: ""
       }

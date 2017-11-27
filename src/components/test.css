@@ -18,3 +18,7 @@
   color: #ccc;
   cursor: pointer;
 }
+
+.test-button:hover {
+  background-color: #000044;
+}
