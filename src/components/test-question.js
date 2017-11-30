@@ -15,7 +15,7 @@ class TestQuestion extends Component {
   render() {
     return (
       <div className="test-question">
-        <div className="test-question-text">{this.props.text}</div>
+        <div className="test-question-text" dangerouslySetInnerHTML={{__html: this.props.text}}/>
         {this.props.answers.map((item, i) =>
           <TestQuestionItem
             key={"questionItem" + i} text={item.text} isRight={item.isRight} userChoice={item.userChoice}

@@ -7,7 +7,7 @@ export default function About ({showAbout, contentText}) {
       <div
         className="about-transparent-background"
         style={{
-          opacity: showAbout ? 0.7 : 0,
+          opacity: showAbout ? 0.95 : 0,
           transform: `translate3d(0, ${showAbout ? 0 : -100}vh, 0)`
         }}
       />
@@ -19,9 +19,7 @@ export default function About ({showAbout, contentText}) {
         }}
       >
         <div className="about-text-wrapper">
-          <div className="about-text">
-            {contentText}
-          </div>
+          <div className="about-text" dangerouslySetInnerHTML={{__html: contentText}}/>
         </div>
       </div>
     </div>
