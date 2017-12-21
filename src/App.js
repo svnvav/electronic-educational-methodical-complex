@@ -361,22 +361,22 @@ const data = {
           text: "Выберите варианты объявления цикла for, которые не вызовут ошибок",
           answers: [
             {
-              text: "for(int i; i<10;i++)",
+              text: "for(int i; i<10;i++){...}",
               isRight: 0,
               userChoice: 0
             },
             {
-              text: "int i = 5;<br>for(;i > 10; --i)",
+              text: "int i = 5; for(;i > 10; --i){...}",
               isRight: 1,
               userChoice: 0
             },
             {
-              text: "for(int i = 0, i<10, i++)",
+              text: "for(int i = 0, i<10, i++){...}",
               isRight: 0,
               userChoice: 0
             },
             {
-              text: "int i;<br>for(i=1; i>0; i++)",
+              text: "int i; for(i=1; i>0; i++){...}",
               isRight: 1,
               userChoice: 0
             },
